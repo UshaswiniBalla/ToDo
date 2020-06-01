@@ -1,0 +1,15 @@
+<div class="loginbox">
+    <img src="assets/login_avatar2.png" class="avatar">
+    <h4 class="h4">Login Here</h4>
+    <form class="loginform">
+        <input type="text" name="username" [(ngModel)]="username" placeholder="Enter Username">
+        <input type="password" name="password" [(ngModel)]="password" placeholder="Enter Password">
+        <small *ngIf='invalidLogin'>{{errormessage}}</small>
+        <button (click)=handleLogin() class="button">Login</button>
+        <a href="#">Forgot your password?</a><br>
+        <a href="#">Don't have your account?</a>
+    </form>
+
+</div>
+
+

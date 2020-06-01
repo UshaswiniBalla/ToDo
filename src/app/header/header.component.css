@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+.navbar {
+    background-color: black;
+}
+.logo {
+    background-color: white;
+    width:20%;    
+}
+.logo:hover{
+    transform: scale(1.5);
+}
+#menus li{
+    float: left;
+    text-align: center;
+    list-style: none;
+    color: white;
+    display: block;
+}
+#menus li a{
+    color: white;
+    text-decoration: none;
+    font-family: Calibri;
+    text-transform: uppercase;
+}
+#menus li:hover {
+    background: red;
+}
+#appname {
+    color:white;
+    text-align: left;
+}
+.heading {
+    text-align: right;
+    color: white
+}

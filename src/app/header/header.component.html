@@ -1,0 +1,18 @@
+<header>
+    <nav class="navbar navbar-expand-md">
+        <div>
+            <a routerLink="" class="navbar-brand">
+                <img alt="logo" src="./assets/logo.png" class="logo" >
+            </a>
+        </div>
+        <div class="navbar-nav navbar-collapse justify-content-end" >
+            <h3 class="heading">TODO Management</h3>
+        </div>
+        <ul class="navbar-nav navbar-collapse justify-content-end" id="menus">
+            <li><a *ngIf="hardcodedAuthenticationService.isUserLoggedIn()" routerLink="/welcome/admin" class="nav-link">Home</a></li>
+            <li><a *ngIf="hardcodedAuthenticationService.isUserLoggedIn()" routerLink="/todos" class="nav-link">Todos</a></li>
+            <li><a *ngIf="!hardcodedAuthenticationService.isUserLoggedIn()" routerLink="/login" class="nav-link">Login</a></li>
+            <li><a *ngIf="hardcodedAuthenticationService.isUserLoggedIn()" routerLink="/logout" class="nav-link">Logout</a></li>
+        </ul>
+    </nav>
+</header>
